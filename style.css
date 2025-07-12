@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+}
+
+main {
+    height: 100vh;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1.8vmin;
+    border: none;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+    color: #b0413e;
+    font-size: 8vmin;
+    background-color: #ffffc7;
+}
+
+#reset {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+#newGame-btn {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #191913;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 6vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.winner-name {
+    color: #df3737d7;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .game {
+        height: 80vw;
+        width: 80vw;
+        gap: 0.8rem;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 10vmin;
+    }
+
+    #msg {
+        font-size: 8vmin;
+    }
+}
+
+@media (max-width: 768px) {
+    .game {
+        height: 80vw;
+        width: 80vw;
+        gap: 0.8rem;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 10vmin;
+    }
+
+    #msg {
+        font-size: 8vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    .game {
+        height: 90vw;
+        width: 90vw;
+        gap: 0.6rem;
+    }
+
+    .box {
+        height: 24vmin;
+        width: 24vmin;
+        font-size: 10vmin;
+    }
+
+    #reset,
+    #newGame-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    #msg {
+        font-size: 10vmin;
+    }
+}
