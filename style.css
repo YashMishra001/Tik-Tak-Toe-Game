@@ -82,6 +82,54 @@ main {
     font-weight: bold;
 }
 
+
+.difficulty-selector {
+    margin: 1rem auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.difficulty-selector label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.difficulty-selector select {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #444;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    color: #222;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.difficulty-selector select:hover,
+.difficulty-selector select:focus {
+    border-color: #007bff;
+    background-color: #eef5ff;
+    outline: none;
+}
+
+.difficulty-selector label {
+    color: #eee;
+}
+
+.difficulty-selector select {
+    background-color: #222;
+    color: #fff;
+    border-color: #555;
+}
+
+.difficulty-selector select:hover,
+.difficulty-selector select:focus {
+    background-color: #333;
+    border-color: #00bcd4;
+}
+
 @media (max-width: 1024px) {
     .game {
         height: 80vw;
